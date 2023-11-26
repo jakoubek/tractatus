@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="{{ $CSS.RelPermalink }}">
 {{- else }}
   {{- with $CSS | minify | fingerprint }}
-    <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ $CSS.RelPermalink }}" integrity="{{ $CSS.Data.Integrity }}" crossorigin="anonymous">
   {{- end }}
 {{- end }}
 
