@@ -1,0 +1,23 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+
+  <p class="content">{{ .Content | safeHTML }}</p>
+
+
+  <hr class="content">
+
+  <p style="text-align:left;">
+  {{ with .NextInSection }}
+    &laquo; <a href="{{ .Permalink }}" title="{{ .Title }} {{ .Summary }}">{{ .Title }}</a>
+  {{ end }}
+
+  {{ with .PrevInSection }}
+    <span style="float:right;">
+      <a href="{{ .Permalink }}" title="{{ .Title }} {{ .Summary }}">{{ .Title }}</a> &raquo;
+    </span>
+  {{ end }}
+  </p>
+
+
+  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+{{ end }}

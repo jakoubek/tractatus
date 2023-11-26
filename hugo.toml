@@ -1,0 +1,22 @@
+baseURL = 'https://tractatus.baneland.de/'
+languageCode = 'de-de'
+title = 'Tractatus logico-philosophicus'
+theme = 'tractatus'
+enableRobotsTXT = true
+defaultContentLanguage = 'de'
+defaultContentLanguageInSubdir = true
+[languages]
+  [languages.de]
+    contentDir = 'content/de'
+    disabled = false
+    languageCode = 'de-DE'
+    languageDirection = 'ltr'
+    languageName = 'Deutsch'
+    weight = 1
+  [languages.en]
+    contentDir = 'content/en'
+    disabled = false
+    languageCode = 'en-US'
+    languageDirection = 'ltr'
+    languageName = 'English'
+    weight = 2

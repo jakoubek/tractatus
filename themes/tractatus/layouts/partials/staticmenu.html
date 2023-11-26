@@ -1,0 +1,12 @@
+<nav>
+    <ul>
+      <li><a href="{{ .Site.BaseURL | relLangURL  }}">Start</a></li>
+      {{- if page.IsTranslated -}}
+        {{ range page.Translations }}
+          <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+        {{ end }}
+      {{ end }}
+      </ul>
+      </li>
+    </ul>
+  </nav>

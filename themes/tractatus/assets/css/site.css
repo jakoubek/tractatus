@@ -1,0 +1,26 @@
+nav {
+    margin-bottom: 0rem;
+}
+main {
+    padding: 0;
+}
+footer {
+    padding: 4rem 1rem;
+}
+h2 {
+    font-weight: normal;
+}
+
+p.summary {
+    font-weight: normal;
+    text-indent: 20px;
+}
+
+p.content {
+    
+    text-indent: 20px;
+}
+
+hr.content {
+    margin: 2rem 0;
+}
