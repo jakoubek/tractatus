@@ -13,5 +13,8 @@
   <footer>
     {{ partial "footer.html" . }}
   </footer>
+  {{ if not (in (.Site.BaseURL | string) "localhost") }}
+  {{- partial "plausible.html" . -}}
+  {{ end }}
 </body>
 </html>
