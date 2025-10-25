@@ -47,4 +47,4 @@ jobs:
           status: ${{ job.status }}
           title: 'Website-Deployment'
           message: 'Eine aktuelle Version der Tractatus-Website wurde bereitgestellt.'
-          url: 'https://www.jakoubek.net/'
+          url: 'https://tractatus.baneland.de/'
